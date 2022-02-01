@@ -21,6 +21,14 @@ body{
     top: 0px;
 }
 
+section{
+    position: absolute;
+    top: 100px;
+    bottom: 0px;
+    width: 100%;
+    overflow: auto;
+}
+
 /*---------------------------- First */
 .darkcolorbg {
     background-color: #1b1227 !important;
