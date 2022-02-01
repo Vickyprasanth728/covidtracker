@@ -1,0 +1,177 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif, ' sora' !important;
+}
+
+/* .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+} */
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footerend {
+    top: 0px;
+}
+
+/*---------------------------- First */
+.darkcolorbg {
+    background-color: #1b1227 !important;
+}
+
+.mediumcolorbg {
+    background-color: #44318D !important;
+}
+
+.lightcolor {
+    color: #66FCF1 !important;
+}
+
+.lightcolorbg {
+    background-color: aqua !important;
+}
+
+.fontcolor {
+    color: white !important;
+}
+
+
+/*---------------------------- second */
+.darkcolorbg-v{
+    background-color: rgb(219, 218, 218) !important;
+}
+
+.lightcolor-v {
+    color: #1b1227 !important;
+}
+
+.lightcolorbg-v {
+    background-color: #05386B !important;
+    color: white !important;
+}
+
+.background-v {
+    background-color:  #fff !important;
+}
+
+
+/*---------------------------- card */
+.cardbox1 {
+    background-color: #FF652F !important;
+}
+
+.cardbox2 {
+    background-color: #FFE400 !important;
+}
+
+.cardbox3 {
+    background-color: #14A76C !important;
+}
+
+.cardbox4 {
+    background-color: rgb(255, 89, 180) !important;
+}
+
+/*------------------------- cardfont */
+.cardfont1 {
+    color: #FF652F;
+}
+
+.cardfont2 {
+    color: #FFE400;
+}
+
+.cardfont3 {
+    color: #26f09f;
+}
+
+.cardfont4 {
+    color: rgb(252, 57, 242);
+}
+
+/*---------------------------- Theme-Button */
+.clickbtn {
+    background-color: #66FCF1 !important;
+    color: #0B0c10;
+}
+
+.clickbtn1 {
+    background-color: #05386B;
+    color: white;
+}
+
+/*---------------------------- footer */
+.footerend {
+    text-align: center;
+}
+
+#chartdiv {
+    min-width: 100%;
+    height: 400px;
+}
+
+/* #chartdivterm {
+    min-width: 100%;
+    height: 400px;
+} */
+
+#middle1 {
+    border-radius: 10px 10px 10px 10px ;
+}
+#middle2{
+    border-radius: 10px 10px 10px 10px ;
+}
+#middle3 {
+    border-radius: 10px 10px 10px 10px ;
+}
+#middle4 {
+    border-radius: 10px 10px 10px 10px ;
+}
+
+
+
+
+
+/*----------------MEDIA QUERY------------------*/
+
+@media all and (max-width: 700px) {
+    .countryname {
+        display: none;
+    }
+
+    .dropdown1 {
+        position: inherit !important;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 10px;
+    }
+}
+
+@media all and (max-width: 475px) {
+    .titlename{
+        font-size: 32px;
+    }
+    .toptable{
+        height: 17vh !important;
+    }
+}
+
+@media all and (max-width: 415px) {
+    .titlename{
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 330px) {
+   .titlename{
+        font-size: 20px;
+    }
+}

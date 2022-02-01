@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trail-BOOTstrapCovid</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <!-- amCharts javascript sources -->
+	<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+	<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+    <!-- pie chart javascript -->
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/chalk.js"></script>
+
+</head>
+<body>
+
+    <!-- <div class="main"> -->
+        <header class="header">
+          <nav class="navbar darkcolorbg toptable p-3" id="nav1">
+            <h1 class="lightcolor titlename navbar" id="nav2">COVID TRACKER</h1>
+            <button class="btn clickbtn" onclick="ontheme()" id="clickbutton">Light</button>
+          </nav>
+        </header>
+
+        <!-- <section class="lightmode-section" id="sec"> -->
+    
+        <content>
+        <div class="mediumcolorbg p-3 mid-centre" id="profile">
+                <div class="card darkcolorbg w-100" id="top1">
+                    <div class="card-body navbar fontcolor topbox">
+                    <h3 class="countryname p-2" id="countryname"> Country Name </h3>
+                    <div class="dropdown1" id="top2" >
+                        <select id="country" onchange="myfunction(this)" class="form-control mediumcolorbg fontcolor">
+                        </select>
+                    </div>
+                    </div>
+                </div>
+            <div class="row m-3" >
+                <div class="col-sm-12 col-md-6 col-lg-3 p-2" >
+                    <div class="card darkcolorbg p-2" id="middle1">
+                        <div class="card-body cardfont1" id="middleword-1">
+                            <h5 class="card-title">Cases</h5>
+                            <hr class="lightcolorbg cardbox1" id="middleline-1">
+                            <p class="card-text" id="cases">1234567</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 p-2">
+                    <div class="card darkcolorbg p-2" id="middle2">
+                        <div class="card-body cardfont2" id="middleword-2">
+                            <h5 class="card-title">Active</h5>
+                            <hr class="lightcolorbg cardbox2" id="middleline-2">
+                            <p class="card-text" id="active">1234567</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 p-2">
+                    <div class="card darkcolorbg p-2" id="middle3">
+                        <div class="card-body cardfont3" id="middleword-3">
+                            <h5 class="card-title">Recovered</h5>
+                            <hr class="lightcolorbg cardbox3" id="middleline-3">
+                            <p class="card-text" id="recovered">1234567</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 p-2">
+                    <div class="card darkcolorbg p-2"id="middle4">
+                        <div class="card-body cardfont4" id="middleword-4">
+                            <h5 class="card-title">Deaths</h5>
+                            <hr class="lightcolorbg cardbox4" id="middleline-4">
+                            <p class="card-text" id="deaths">1234567</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 p-2">
+                    <div class="card w-100 darkcolorbg" id="down">
+                        <div class="card-body" style="height: 450px;">
+                            <div id="chartdiv" style="width: 100%; height: 400px;"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 p-2">
+                    <div class="card w-100 darkcolorbg" id="down1">
+                        <div class="card-body" style="height: 450px;">
+                            <div id="chartdivterm" style="width: 100%; height: 400px;"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> <br> <hr>
+    </content> 
+
+            <footer class="footer">
+                <div class="card darkcolorbg footerend text-white" id="footer">
+                    <div class="card-body">
+                        <h4 class="fa fa-copyright" aria-hidden="true"> &nbsp; Copyrights</h4>
+                    </div>
+                </div>
+            </footer>
+        
+    <!-- </div> -->
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+      
+</body>
+</html>
