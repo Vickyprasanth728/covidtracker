@@ -5,12 +5,13 @@ function ontheme(){
 	if (colortheme == "dark") {
 		document.getElementById("nav1").className = "navbar darkcolorbg toptable p-3";
 		document.getElementById("nav2").className = "navbar lightcolor titlename ";
+		document.getElementById("sec").className = "sectionform";
 		document.getElementById("top1").className = "darkcolorbg";
 		document.getElementById("top2").className = "darkcolorbg dropdown1 ";
 		document.getElementById("countryname").className = "countryname p-2";
 		document.getElementById("country").className = "form-control mediumcolorbg fontcolor";
 
-		document.getElementById("profile").className = "p-3 h-100 mediumcolorbg";
+		document.getElementById("profile").className = "p-3 h-130 mediumcolorbg mid-centre";
 
 		document.getElementById("middle1").className = "darkcolorbg p-2";
 		document.getElementById("middle2").className = "darkcolorbg p-2";
@@ -45,12 +46,13 @@ function ontheme(){
 	else {
 		document.getElementById("nav1").className = "navbar darkcolorbg-v toptable p-3";
 		document.getElementById("nav2").className = "navbar lightcolor-v titlename";
+		document.getElementById("sec").className = "sectionform";
 		document.getElementById("top1").className = "darkcolorbg-v";
 		document.getElementById("top2").className = "lightcolor-v  dropdown1 ";
 		document.getElementById("countryname").className = "lightcolor-v countryname p-2";
 		document.getElementById("country").className = "form-control lightcolorbg-v fontcolor";
 
-		document.getElementById("profile").className = "p-3 h-100 background-v";
+		document.getElementById("profile").className = "p-3 h-130 background-v mid-centre";
 
 		document.getElementById("middle1").className = "darkcolorbg-v p-2";
 		document.getElementById("middle2").className = "darkcolorbg-v p-2";
